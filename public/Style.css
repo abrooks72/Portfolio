@@ -1,3 +1,4 @@
+/* Existing styles (unchanged) */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -84,3 +85,13 @@ footer a i:hover { color:#57b4f1; text-shadow:0 0 6px rgba(87,180,241,0.8); }
 .post-item p { margin-bottom:0; }
 .post-item button { float:right; background:#e74c3c; color:#fff; border:none; border-radius:3px; padding:5px 10px; cursor:pointer; }
 .post-item button:hover { background:#c0392b; }
+
+/* ============================= */
+/* New: Make About, Projects, Blog headers white and underlined */
+#about h2,
+#projects h2,
+#blog h2 {
+    color: white;
+    text-decoration: underline;
+}
+
