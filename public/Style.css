@@ -41,7 +41,12 @@ nav {
     box-shadow:0 2px 6px rgba(0,0,0,0.4); 
 }
 
-nav h2 { margin: 0; font-size: 22px; letter-spacing: 1px; text-align:center; }
+nav h2 { 
+    margin: 0; 
+    font-size: 22px; 
+    letter-spacing: 1px; 
+    text-align: center;
+}
 
 /* Navigation links styling */
 nav a {
@@ -60,26 +65,36 @@ nav a:hover {
 /* Add pipes between links but not underlined */
 nav a + a::before {
     content: "|";
-    text-decoration: none; /* removes underline from the pipe */
+    text-decoration: none;
     margin: 0 10px;
     color: #f1f1f1;
 }
 
-/* Section headers styling */
+h2 { 
+    text-align: center; 
+    text-decoration: none; 
+    color: #fff; 
+}
+
+/* Center section headers with full underline */
 #about h2,
 #projects h2,
 #blog h2,
 #contact h2 {
-    text-align: center;
-    display: inline-block;
+    border-bottom: 3px solid #fff; /* full underline */
+    display: block; /* make it block to allow centering */
+    width: fit-content; /* width fits the text */
+    margin: 0 auto 20px auto; /* center horizontally */
     padding-bottom: 5px;
-    margin: 0 auto 20px auto;
-    font-size: 28px; /* same size for all section headers */
-    text-decoration: underline;
-    color: #fff;
+    font-size: 28px; /* uniform size */
+    text-align: center;
 }
 
-section { padding:40px; margin:auto; }
+section { 
+    padding:40px; 
+    margin:auto; 
+    text-align: center;
+}
 
 #about { 
     max-width:1200px; 
@@ -199,6 +214,7 @@ footer button {
 }
 
 footer button:hover { background:#1f8dd6; }
+
 
 
 
