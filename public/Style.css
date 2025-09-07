@@ -41,7 +41,12 @@ nav {
     box-shadow:0 2px 6px rgba(0,0,0,0.4); 
 }
 
-nav h2 { margin: 0; font-size: 22px; letter-spacing: 1px; }
+nav h2 { 
+    margin: 0; 
+    font-size: 22px; 
+    letter-spacing: 1px; 
+    text-align: center;
+}
 
 /* Navigation links styling */
 nav a {
@@ -76,13 +81,19 @@ h2 {
 #projects h2,
 #blog h2,
 #contact h2 {
-    border-bottom: 3px solid #fff; /* adjust thickness */
+    border-bottom: 3px solid #fff; /* underline thickness */
     display: inline-block;
     padding-bottom: 5px;
+    text-align: center;
+    margin: 0 auto;
 }
 
 /* Section styling */
-section { padding:40px; margin:auto; }
+section { 
+    padding:40px; 
+    margin:auto; 
+    text-align: center; /* Center all text by default */
+}
 
 #about { 
     max-width:1200px; 
@@ -202,5 +213,6 @@ footer button {
 }
 
 footer button:hover { background:#1f8dd6; }
+
 
 
