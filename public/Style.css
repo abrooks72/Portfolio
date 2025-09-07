@@ -71,10 +71,13 @@ h2 {
     color: #fff; 
 }
 
-/* Fix Blog header underline */
-#blog h2 {
-    text-decoration: underline;
-    color: #fff;
+/* Ensure all main section headers are underlined */
+#about h2,
+#projects h2,
+#blog h2,
+#contact h2 {
+    text-decoration: underline !important;
+    color: #fff !important;
 }
 
 section { padding:40px; margin:auto; }
@@ -197,6 +200,4 @@ footer button {
 }
 
 footer button:hover { background:#1f8dd6; }
-
-
 
