@@ -18,18 +18,7 @@ body {
 }
 
 .main-content { flex: 1; margin: 0; }
-
-/* Middle content area with Parkay Floor background */
-.content-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px;
-    background-color: #2C3E50; /* fallback */
-    background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/pw_pattern.png");
-    background-repeat: repeat;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
-}
+.content-wrapper { max-width: 1200px; margin: 0 auto; }
 
 header {
     background: linear-gradient(135deg, #000000, #1a1a1a, #2C3E50);
@@ -71,6 +60,7 @@ nav a:hover {
 /* Add pipes between links but not underlined */
 nav a + a::before {
     content: "|";
+    text-decoration: none; /* removes underline from the pipe */
     margin: 0 10px;
     color: #f1f1f1;
 }
@@ -200,7 +190,6 @@ footer button {
     margin-top:10px;
 }
 
-footer button:hover { background:#1f8dd6; } 
-
+footer button:hover { background:#1f8dd6; }
 
 
