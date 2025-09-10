@@ -51,7 +51,7 @@ nav h2 {
 /* Navigation links styling */
 nav a {
     color: #f1f1f1;
-    text-decoration: underline;
+    text-decoration: none; /* underline removed */
     font-weight: bold;
     transition: all 0.3s ease;
 }
@@ -76,24 +76,24 @@ h2 {
     color: #fff; 
 }
 
-/* Center section headers with full underline */
+/* Use border-bottom for full underline on section headers */
 #about h2,
 #projects h2,
 #blog h2,
 #contact h2 {
-    border-bottom: 3px solid #fff; /* full underline */
-    display: block; /* make it block to allow centering */
-    width: fit-content; /* width fits the text */
-    margin: 0 auto 20px auto; /* center horizontally */
+    border-bottom: 3px solid #fff; /* underline thickness */
+    display: inline-block;
     padding-bottom: 5px;
-    font-size: 28px; /* uniform size */
     text-align: center;
+    margin: 0 auto;
+    font-size: 28px; /* match size across all headers */
 }
 
+/* Section styling */
 section { 
     padding:40px; 
     margin:auto; 
-    text-align: center;
+    text-align: center; /* Center all text by default */
 }
 
 #about { 
@@ -214,8 +214,5 @@ footer button {
 }
 
 footer button:hover { background:#1f8dd6; }
-
-
-
 
 
